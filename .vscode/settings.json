@@ -1,1 +1,35 @@
-{}
+// <your-project>/.vscode/settings.json
+{
+  // Only this project formats on save
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+
+  // -------- Angular (frontend) --------
+  // Use Prettier for web files
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  // Ensure Prettier only runs if this project has a config
+  "prettier.requireConfig": true,
+  // Optional: point to project config files
+  // "prettier.configPath": "${workspaceFolder}/.prettierrc",
+  // "prettier.ignorePath": "${workspaceFolder}/.prettierignore",
+
+  // -------- C# (backend) --------
+  // Option A: use CSharpier (strict, reproducible)
+  "[csharp]": { "editor.defaultFormatter": "csharpier.csharpier-vscode" },
+  // Optional: local CSharpier config
+  // "csharpier.configPath": "${workspaceFolder}/.csharpierrc.json",
+
+  // Option B (instead of CSharpier): use the built-in C# formatter
+  // "[csharp]": { "editor.defaultFormatter": "ms-dotnettools.csharp" },
+
+  // Keep TypeScript/Angular imports tidy (optional)
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.preferences.importModuleSpecifier": "non-relative"
+}
