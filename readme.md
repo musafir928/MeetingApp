@@ -12,6 +12,9 @@
 
 ## CSS Guide
 
+### frameworks
+- tailwind
+- [daisy ui - tailwind plugin](https://daisyui.com/)
 ### flex system
 [flex box froggy - visual demonstration of css flex](https://flexboxfroggy.com) 
 
