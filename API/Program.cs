@@ -22,6 +22,8 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 // CORS
 builder.Services.AddCors();
 
+builder.Services.AddScoped<IMemberRepository, MemberRepository>();
+
 builder
     .Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
